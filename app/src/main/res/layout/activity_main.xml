@@ -87,6 +87,31 @@
                     android:text="@string/find_me"
                     style="@style/Base.TextAppearance.AppCompat.Widget.Button.MainMenuButton" />
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pedometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/ic_pedometer"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    app:srcCompat="@drawable/ic_map"
+                    tools:ignore="VectorDrawableCompat"
+                    android:contentDescription="@string/pedometer"
+                    app:tint="@color/white"/>
+
+                <Button
+                    android:id="@+id/btn_pedometer"
+                    android:text="@string/pedometer"
+                    style="@style/Base.TextAppearance.AppCompat.Widget.Button.MainMenuButton" />
+            </LinearLayout>
         </LinearLayout>
 
     </ScrollView>

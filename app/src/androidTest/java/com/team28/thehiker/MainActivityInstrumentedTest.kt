@@ -63,6 +63,14 @@ class MainActivityInstrumentedTest {
         Intents.intended(hasComponent(TestActivity::class.java.name), times(1))
     }
 
+    @Test
+    fun onButtonClick_PedometerActivityStarted() {
+        onView(withId(R.id.btn_pedometer))
+            .perform(click())
+
+        Intents.intended(hasComponent(PedometerActivity::class.java.name), times(1))
+    }
+
     @After
     fun cleanUp() {
         Intents.release()
